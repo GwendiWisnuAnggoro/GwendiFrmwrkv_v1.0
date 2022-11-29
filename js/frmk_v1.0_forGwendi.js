@@ -1,5 +1,11 @@
-function ClassListAdd(sasaran, classList){
+function ClassListTambah(sasaran, classList){
 	return sasaran.classList.add(classList);
+}
+function ClassListHapus(sasaran, classList){
+	return sasaran.classList.remove(classList);
+}
+function Toggle(sasaran, classT){
+	return sasaran.classList.toggle(classT);
 }
 
 function LStorageTambahItem(key, isi){
