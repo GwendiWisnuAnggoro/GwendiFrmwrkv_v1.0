@@ -37,14 +37,12 @@ function innerTextTambahSamaDengan(tujuan, isi){
 function innerTextKurangSamaDengan(tujuan, isi){
 	return tujuan.innerText -= isi;
 }
-function ConsoleLog(isi){
+function Log(isi){
 	return console.log(isi);
 }
 function notif(isi){
 	return alert(isi);
 }
-
-
 function panggilElementDariID(id){
 		return document.getElementById(id);
 }
@@ -55,7 +53,12 @@ function panggilElementDariKelas(kelas){
 function panggilElementDariTag(tag){
 		return document.getElementsByTagName(tag);
 }
-
+function panggilDenganQuery(name){
+	return document.querySelector(name)
+}
+function panggilSemuaQuery(name){
+	return document.querySelectorAll(name)
+}
 function tambahEvent(nama, acara, fungsi){
 	return nama.addEventListener(acara, fungsi);
 }
